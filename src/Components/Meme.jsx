@@ -28,7 +28,7 @@ const Meme = ({ item }) => {
     <div className="memecard">
       <div className="memetitle">{item.title}</div>
       <div className="memeimg">
-        <img src={process.env.PUBLIC_URL + item.img} alt="meme_image"></img>
+        <img src={"./mem" + item.img} alt="meme_image"></img>
       </div>
       <div className="memevote">
         <div>
