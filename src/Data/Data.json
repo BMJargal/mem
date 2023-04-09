@@ -1,0 +1,26 @@
+[
+  {
+    "title": "mem 1`",
+    "upvotes": 10,
+    "downvotes": 6,
+    "img": "./mem1.png"
+  },
+  {
+    "title": "mem 2`",
+    "upvotes": 10,
+    "downvotes": 5,
+    "image": "./img/mem2.jpg"
+  },
+  {
+    "title": "mem 3`",
+    "upvotes": 10,
+    "downvotes": 4,
+    "img": "./img/mem3.png"
+  },
+  {
+    "title": "mem 4`",
+    "upvotes": 10,
+    "downvotes": 3,
+    "img": "./img/mem4.jpg"
+  }
+]
