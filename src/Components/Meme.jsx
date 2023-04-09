@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import mem1 from ".."
 const Meme = ({ item }) => {
   const [upcount, setUpCount] = useState(item.upvotes);
   const [data, setData] = useState([]);
@@ -27,7 +28,7 @@ const Meme = ({ item }) => {
     <div className="memecard">
       <div className="memetitle">{item.title}</div>
       <div className="memeimg">
-        <img src={item.img} alt="meme_image"></img>
+        <img src={process.env.PUBLIC_URL + item.img} alt="meme_image"></img>
       </div>
       <div className="memevote">
         <div>
