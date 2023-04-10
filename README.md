@@ -2,6 +2,16 @@
 
 https://bmjargal.github.io/mem/
 
+# instruction
+this is project react ALK ed.7
+meme photos have like and unlike buttons
+
+hot page is:
+liked + unliked >5
+
+regular page is:
+others
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
