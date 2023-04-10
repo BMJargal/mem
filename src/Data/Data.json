@@ -1,25 +1,25 @@
 [
   {
-    "title": "mem 1`",
+    "title": "mem 1",
     "upvotes": 10,
     "downvotes": 6,
     "img": "/img/mem1.png"
   },
   {
-    "title": "img/mem 2`",
-    "upvotes": 10,
+    "title": "mem 2",
+    "upvotes": 11,
     "downvotes": 5,
     "img": "/img/mem2.jpg"
   },
   {
-    "title": "mem 3`",
-    "upvotes": 10,
+    "title": "mem 3",
+    "upvotes": 12,
     "downvotes": 4,
     "img": "/img/mem3.png"
   },
   {
-    "title": "mem 4`",
-    "upvotes": 10,
+    "title": "mem 4",
+    "upvotes": 13,
     "downvotes": 3,
     "img": "/img/mem4.jpg"
   }

@@ -4,7 +4,7 @@ import Data from "../Data/Data.json";
 const Hot = () => {
   return (
     <div>
-      <p>I AM HOT</p>
+      <p>Hot meme list :</p>
 
       {Data.filter((item) => item.upvotes - item.downvotes >= 5).map((item) => (
         <Meme item={item} />

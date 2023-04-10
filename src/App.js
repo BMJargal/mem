@@ -1,43 +1,34 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import logo from "./mem/logo.svg";
 
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Hot from "./Components/Hot";
 import Regular from "./Components/Regular";
 import "./App.css";
+import lgo from "./logo.svg";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter className="container">
       <header className="App-header">
         <Header />
+        <div>
+          <img src={lgo} className="App-logo" alt="logo" />
+        </div>
       </header>
       <div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Routes className="main">
+          <Route path="/" exact caseSensitive={false} element={<Hot />} />
+          <Route path="/Hot" exact caseSensitive={false} element={<Hot />} />
+          <Route
+            path="/Regular"
+            exact
+            caseSensitive={false}
+            element={<Regular />}
+          />
+        </Routes>
       </div>
-      <Routes>
-        <Route path="/" exact caseSensitive={false} element={<Hot />} />
-        <Route path="/Hot" exact caseSensitive={false} element={<Hot />} />
-        <Route
-          path="/Regular"
-          exact
-          caseSensitive={false}
-          element={<Regular />}
-        />
-      </Routes>
+
       <footer className="App-footer">
         <Footer />
       </footer>

@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="header__content">
+    <div className="nav">
       <p>MeMe</p>
 
       <ul>
