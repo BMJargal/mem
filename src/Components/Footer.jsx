@@ -1,3 +1,4 @@
+//Footer.jsx
 const Footer = () => {
   return (
     <div className="footer__wrapper">

@@ -1,14 +1,22 @@
+//hot.jsx
 import Meme from "./Meme";
-import Data from "../Data/Data.json";
 
-const Hot = () => {
+const Hot = ({ state, setState, plusCount, minusCount }) => {
   return (
-    <div>
-      <p>Hot meme list :</p>
-
-      {Data.filter((item) => item.upvotes - item.downvotes >= 5).map((item) => (
-        <Meme item={item} />
-      ))}
+    <div className="center">
+      {state.map(
+        (item, id) =>
+          -item.downvotes + item.upvotes > 5 && (
+            <>
+              <Meme
+                id={id}
+                item={item}
+                plusCount={plusCount}
+                minusCount={minusCount}
+              />
+            </>
+          )
+      )}
     </div>
   );
 };

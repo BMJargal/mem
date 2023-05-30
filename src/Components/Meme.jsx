@@ -1,23 +1,7 @@
-import React, { useState, useEffect } from "react";
-const Meme = ({ item }) => {
-  const [data, setData] = useState(item);
-
-  const plusCount = () => {
-    const updatedData = { ...data, upvotes: data.upvotes + 1 };
-    setData(updatedData);
-  };
-  const minusCount = () => {
-    const updatedData = { ...data, downvotes: data.downvotes + 1 };
-    setData(updatedData);
-  };
-
-  useEffect(() => {
-    const jsonDataString = JSON.stringify(data);
-    localStorage.setItem("data", jsonDataString);
-  }, [data]);
-
+//Meme.jsx
+const Meme = ({ id, item, plusCount, minusCount }) => {
   return (
-    <div className="memecard">
+    <div key={id} className="memecard">
       <div className="memetitle">{item.title}</div>
 
       <div className="memeimg">
@@ -30,15 +14,15 @@ const Meme = ({ item }) => {
 
       <div className="memevote">
         <div className="memevote">
-          <button className="btn" onClick={plusCount}>
+          <button className="btn" onClick={() => plusCount(id)}>
             Like
           </button>
-          <p className="upv">{data.upvotes}</p>
+          <p className="upv">{item.upvotes}</p>
         </div>
 
         <div className="memevote">
-          <p className="downv">{data.downvotes}</p>
-          <button className="btn" onClick={minusCount}>
+          <p className="downv">{item.downvotes}</p>
+          <button className="btn" onClick={() => minusCount(id)}>
             Unlike
           </button>
         </div>

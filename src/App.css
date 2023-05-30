@@ -138,3 +138,8 @@
 .memecard:hover {
   opacity: 1;
 }
+
+.center {
+  display: grid;
+  place-items: center;
+}
